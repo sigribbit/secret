@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise Love Letter</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+  <style>
+    body {
+      font-family: 'Pacifico';
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #intro {
+      background-image: url('hauu.jpg'); /* Replace 'your-background-image.jpg' with the path to your image */
+      background-size:cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color:rgb(190, 54, 120);
+    }
+
+    #intro-text {
+      font-size: 20px;
+      text-align: center;
+      line-height: 0;
+    }
+
+    #love-letter {
+        background-image: url('bgh.jpg'); /* Replace with the path to your background image */
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 20px;
+        display: none;
+        height: 100vh; /* Set the height to 100% of the viewport height */
+        width: 100%;
+    }
+
+    #heart {
+      color: #e74c3c;
+      font-size: 36px;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    #signature {
+      margin-top: 20px;
+      font-style: italic;
+      color: #3498db;
+    }
+
+    button {
+      background-color: rgb(190, 54, 120);
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="intro">
+    <div id="intro-text">  
+     <p>  ♡ ∩_∩ </p>
+     <p>  („• ֊ •„)♡</p>
+     <p>  ￣￣￣￣￣￣￣￣￣</p>
+     <p>          iloveyouuuu ♡                    </p>
+      ￣￣￣￣￣￣￣￣￣￣
+    </div>
+    <button onclick="revealLoveLetter()">Tap Me ❤️</button>
+  </div>
+
+  <div id="love-letter">
+    <div id="heart">❤️</div>
+    <div id="message">
+      <p>Dear [Your Loved One's Name],</p>
+      <p>                                                                               </p>
+      <p>I just wanted to tell you how much you mean to me. You fill my days with joy and warmth, and I am grateful to have you in my life.</p>
+      <P>                                                                                                         </P>
+      <p>Your love is like a pixelated masterpiece, simple yet beautiful. Every moment with you is a treasure, and I cherish each one.</p>
+      <P>                                                                                                              </P>
+      <p>Thank you for being my love and my best friend. I look forward to creating many more pixelated memories with you.</p>
+      <p>                                                                                                      </p>
+    </div>
+    <div id="signature">
+      <p>With all my love,</p>
+      <p>                                                                             </p>
+      <p>[Your Name]</p>
+    </div>
+  </div>
+
+  <script>
+    function revealLoveLetter() {
+      // Hide the intro
+      document.getElementById('intro').style.display = 'none';
+
+      // Show the love letter
+      document.getElementById('love-letter').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
